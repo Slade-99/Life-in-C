@@ -9,23 +9,15 @@ int main()
 
 
 
-    int x = 7;
+    int z = 100;
+    int y = 10000007;
+    int c = z!;
 
-    for(int i = 0;i<x;i++){
-
-
-        if(i==5){
-            break;
-        }else{
-            cout<<i<<endl;
+    
 
 
-        }
+    cout<<(z&y)<<endl;
 
-
-
-
-    }
     
 
 
