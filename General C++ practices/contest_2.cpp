@@ -14,7 +14,7 @@ int main()
     for(int i=0;i<test_cases;i++)
     {
 
-        int value;
+        long long int value;
         cin>>value;
 
         long long int answer = 1;
@@ -36,9 +36,12 @@ int main()
 
             
 
-            cout<<(answer*2)<<endl;
+            long long int result = ((value-1)*(value))%(m);
+            long long int result_2 = ((result)*(answer))%(m);
+            cout<<result_2<<endl;
 
         }
+
 
 
 
