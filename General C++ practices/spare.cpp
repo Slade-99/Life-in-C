@@ -1,17 +1,31 @@
 #include <bits/stdc++.h>
-#define nl "\n"
-#define ll long long int
-const int mod = 1e9+7;
 using namespace std;
-int main () {
-    int x,y;
-    x = 345345345;
-    y = 6576756;
 
-    long long z = x*y;
+int main()
+{
+
+    set<int> s;
+
+    s.insert(1);
+    s.insert(10);
+    
+    auto it = s.find(1);
+
+    if(it==s.end()){
+        cout<<"yes"<<endl;
+    }
 
 
-    cout<<(z>x)<<endl;
+    cout<<(s.count(4))<<endl;
+
+
+
+
+    
+
+
+
+
 
     return 0;
 }
