@@ -1,0 +1,70 @@
+#include <bits/stdc++.h>
+#define nl "\n"
+#define ll long long int
+using namespace std;
+
+
+int main(){
+
+
+
+
+
+    ios::sync_with_stdio(false);
+    cin.tie(0);cout.tie(0);
+
+
+
+    ll x = 1000;
+
+
+
+    int seive[x] ;
+
+    for(int i=0;i<x;i++)
+    {
+        seive[i] = 1;
+    }
+    
+    
+    
+    
+    for(int i =2; (i*i)<x ; i++){
+
+        
+            
+            for(int j = i+i ; j<x ; j += i){
+
+                if(seive[j]< i){
+                    seive[j]=i;
+                }
+
+            }
+        
+
+    }
+
+
+
+
+    
+    int z = 75;
+
+    
+    
+    while(seive[z]!=1){
+        int result = z/seive[z];
+        cout<<result<<",";
+        z = seive[z];
+
+    }
+
+    cout<<z;
+    
+    
+    
+    return 0;
+
+
+
+}
