@@ -14,7 +14,7 @@ int main(){
 
 
   //Populating the vectors
-  for(int i=0; i<=E; i++){
+  for(int i=0; i<E; i++){
     int a,b;
     cin>>a>>b;
     graph[a].push_back(b);
@@ -26,7 +26,7 @@ int main(){
   // Printing the Graph
 
 /*
-for(int i=1; i<N ; i++){
+for(int i=1; i<=N ; i++){
 
  cout<<"Node "<<i<<":";
  for(auto j: graph[i]){
