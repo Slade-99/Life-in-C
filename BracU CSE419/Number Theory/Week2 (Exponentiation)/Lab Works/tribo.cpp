@@ -7,7 +7,7 @@ Constraints: 1<=n<=1e18
 
 Author: Farhan Feroz
 */
-/*
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -21,14 +21,14 @@ void init_code() {
 
 const int N = 100;
 const int mod = 1e9 + 7;
-*/
+
 /*
 We will be using a structure for matrix. You can also use a simple 2 dimensional
 array as a matrix. However, if you create a structure you can always reuse this
 structure if you once clearly understand how it has been designed. Please take
 some time to understand the following structure.
 */
-/*
+
 struct Matrix {
   int row, col;
   long long int m[N][N];
@@ -134,4 +134,3 @@ int main() {
   return 0;
 }
 
-*/

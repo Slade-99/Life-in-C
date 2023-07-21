@@ -22,12 +22,7 @@ void init_code() {
 const int N = 100;
 const int mod = 1e9 + 7;
 
-/*
-We will be using a structure for matrix. You can also use a simple 2 dimensional
-array as a matrix. However, if you create a structure you can always reuse this
-structure if you once clearly understand how it has been designed. Please take
-some time to understand the following structure.
-*/
+
 
 struct Matrix {
   int row, col;
@@ -112,15 +107,16 @@ int main() {
   cin >> n;
   Matrix Q(2, 2);
 
-  Q.m[0][0] = 19, Q.m[0][1] = 6;
-  Q.m[1][0] = 7, Q.m[1][1] = 20;
+  Q.m[0][0] = 0, Q.m[0][1] = 1;
+  Q.m[1][0] = 1, Q.m[1][1] = 1;
+
   // Q.print_matrix();
 
   Matrix F(2, 1);
 
-  F.m[0][0] = 1;
-  F.m[1][0] = 0;
-  
+  F.m[0][0] = 0;
+  F.m[1][0] = 1;
+
   // F.print_matrix();
 
   Matrix Qn = Q.pow(n);
@@ -132,7 +128,4 @@ int main() {
   cout << Ans.m[0][0] << endl;
   return 0;
 }
-
-
-
 
