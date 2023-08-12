@@ -54,6 +54,9 @@ freopen("input.txt","r",stdin);
 
     
     
+for(int i=1;i<=n;i++){
+  cout<<root[i]<<endl;
+}
 
     
 

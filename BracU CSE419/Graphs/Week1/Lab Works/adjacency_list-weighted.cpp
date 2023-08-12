@@ -21,7 +21,7 @@ int main(){
     int a,b,c;
     cin>>a>>b>>c;
     graph[a].push_back(make_pair(b,c));
-    graph[b].push_back(make_pair(b,c)); 
+    graph[b].push_back(make_pair(a,c)); 
   }
 
 
